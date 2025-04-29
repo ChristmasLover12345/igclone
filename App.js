@@ -1,6 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import HeaderComponent from './Components/HeaderComponent';
+import PostComponent from './Components/PostComponent';
+import FooterComponent from './Components/FooterComponent';
 
 export default function App() {
   return (
@@ -8,8 +11,9 @@ export default function App() {
     // h1, p, etc = Text
     
     <SafeAreaView style={styles.container}>
-      <Text>First react native</Text>
-      {/* <StatusBar style="auto" /> */}
+     <HeaderComponent />
+     <PostComponent />
+     <FooterComponent />
     </SafeAreaView>
   );
 }
@@ -19,8 +23,6 @@ export default function App() {
 // flex 1 takes up all of the available space of the parent component
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'black'
   },
 });
