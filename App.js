@@ -14,6 +14,7 @@ export default function App() {
      <HeaderComponent />
      <PostComponent />
      <FooterComponent />
+     <StatusBar style='light'/>
     </SafeAreaView>
   );
 }
