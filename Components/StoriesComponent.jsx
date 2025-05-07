@@ -23,6 +23,48 @@ export default function StoriesComponent() {
         <Text style={styles.LabelText}>Sigma</Text>
       </View>
 
+      <View style={styles.container}>
+        {/* Gradiant Border Around our image */}
+        <LinearGradient style={styles.linerGradeant} colors={["#feda75", "#Fede1e", "#d62976", "#962fbf", "#4f5bd5"]}>
+
+        {/* This View will be our image Wrapper*/}
+        <View style={styles.imageWrapper}>
+          {/* Profile Image */}
+          <Image  source={MePicture} style={styles.image}/>
+        </View>
+
+        </LinearGradient>
+        <Text style={styles.LabelText}>Sigma</Text>
+      </View>
+
+      <View style={styles.container}>
+        {/* Gradiant Border Around our image */}
+        <LinearGradient style={styles.linerGradeant} colors={["#feda75", "#Fede1e", "#d62976", "#962fbf", "#4f5bd5"]}>
+
+        {/* This View will be our image Wrapper*/}
+        <View style={styles.imageWrapper}>
+          {/* Profile Image */}
+          <Image  source={MePicture} style={styles.image}/>
+        </View>
+
+        </LinearGradient>
+        <Text style={styles.LabelText}>Sigma</Text>
+      </View>
+
+      <View style={styles.container}>
+        {/* Gradiant Border Around our image */}
+        <LinearGradient style={styles.linerGradeant} colors={["#feda75", "#Fede1e", "#d62976", "#962fbf", "#4f5bd5"]}>
+
+        {/* This View will be our image Wrapper*/}
+        <View style={styles.imageWrapper}>
+          {/* Profile Image */}
+          <Image  source={MePicture} style={styles.image}/>
+        </View>
+
+        </LinearGradient>
+        <Text style={styles.LabelText}>Sigma</Text>
+      </View>
+
     </ScrollView>
   )
 }
