@@ -86,25 +86,40 @@ export default function PostComponent() {
               </View>
             
                 {/* Description Container */}
-                <View style={{flex: 1, flexDirection: "row"}}>
+                <View style={{flex: 1, flexDirection: "row", paddingTop: 5}}>
                   <Text style={{color: "white", fontWeight: "bold", paddingLeft: 14, paddingRight: 5 }}>{post.usernName}</Text>
                   <Text style={{color: "white"}}>{post.description}</Text>
-                  <View>
+                </View>
+                <View>
                     {
                       post.comments.map((comment, idx) => {
                         return (
                         
                           <View key={idx} style={{flex: 1, flexDirection: "row"}}>
-                            <Text style={{color: "white", fontWeight: "bold", paddingLeft: 14, paddingRight: 5 }}>{comment.userCommentor}</Text>
-                            <Text style={{color: "white"}}>{comment.comment}</Text>
+                            <Text style={{color: "white", fontWeight: "bold", paddingLeft: 14, paddingRight: 5, paddingTop: 5 }}>{comment.userCommentor}</Text>
+                            <Text style={{color: "white", paddingTop: 5}}>{comment.comment}</Text>
                           </View>
                           
                           
                         )
                       })
                     }
+                    {
+                      <View style={{flex: 1, flexDirection: "row"}}>
+                        <Image source={post.profilePicture} style={{height: 30, width: 30, borderRadius: 50, marginLeft: 14}}/>
+                        <Text style={{color: "gainsboro", paddingLeft: 13, alignSelf: "center"}}>Add a Comment...</Text>
+
+                        <View> 
+                          <Text style={{color: "gainsboro", paddingLeft: 14, paddingTop: 6}}>12 Hours Ago</Text>
+                        </View>
+
+
+                      </View>
+
+                     
+
+                    }
                   </View>
-                </View>
 
             </View>
 

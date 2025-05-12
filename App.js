@@ -12,7 +12,11 @@ export default function App() {
     
     <SafeAreaView style={styles.container}>
      <HeaderComponent />
-     <PostComponent />
+
+     <View style={{ flex: 1, paddintBottom: 70 }}>
+       <PostComponent />
+     </View>
+    
      <FooterComponent />
      <StatusBar style='light'/>
     </SafeAreaView>
@@ -24,6 +28,7 @@ export default function App() {
 // flex 1 takes up all of the available space of the parent component
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'black'
+    backgroundColor: 'black',
+    flex: 1
   },
 });

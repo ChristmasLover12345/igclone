@@ -21,8 +21,15 @@ const styles = StyleSheet.create({
   FooterContainer: {
     flexDirection: "row",
     justifyContent: "space-around",
-    paddingBottom: 30,
-    marginTop: 15
+    height: 70,
+    position: "absolute",
+    bottom: 0,
+    zIndex: 10,
+    width: "100%",
+    alignItems: "center",
+    borderTopWidth: 0.5,
+    borderTopColor: "rgba(255, 355, 255, 0.2)",
+    backgroundColor: "black",
 
   }
 })
