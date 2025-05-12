@@ -89,6 +89,21 @@ export default function PostComponent() {
                 <View style={{flex: 1, flexDirection: "row"}}>
                   <Text style={{color: "white", fontWeight: "bold", paddingLeft: 14, paddingRight: 5 }}>{post.usernName}</Text>
                   <Text style={{color: "white"}}>{post.description}</Text>
+                  <View>
+                    {
+                      post.comments.map((comment, idx) => {
+                        return (
+                        
+                          <View key={idx} style={{flex: 1, flexDirection: "row"}}>
+                            <Text style={{color: "white", fontWeight: "bold", paddingLeft: 14, paddingRight: 5 }}>{comment.userCommentor}</Text>
+                            <Text style={{color: "white"}}>{comment.comment}</Text>
+                          </View>
+                          
+                          
+                        )
+                      })
+                    }
+                  </View>
                 </View>
 
             </View>
